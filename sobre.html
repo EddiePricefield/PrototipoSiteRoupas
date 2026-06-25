@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - CAPY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Pra usar como base de modelos prontos: https://getbootstrap.com/docs/5.0/examples/cheatsheet/ -->
+    <!-- Pra usar como base das notações de espaçamento: https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Para usar fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Para usar fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Para a Montserrat -->
+    <link href="styles.css" rel="stylesheet"> <!-- Pro botão de Voltar ao Topo -->
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4 logo-size" href="home.html"> 
+                    <img src="resources/imgs/logo.png" alt="logo da empresa"> 
+                    <span>CAPY</span> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2"> 
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="precos.html">Preços</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <!-- Título da Página -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Sobre a CAPY</h1>
+            <p class="text-muted">Conheça nossa trajetória e os princípios que nos movem.</p>
+        </div>
+
+        <!-- História da Empresa -->
+        <section class="row mb-5 align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0 text-center">
+                <img src="resources/imgs/mockup.png" alt="logo da empresa" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted" style="line-height: 1.8;">
+                    A <b>CAPY</b> foi fundada em 2026 por um grupo de amigos apaixonados por design e moda sustentável. Cansados de encontrar peças de baixa durabilidade e impacto ambiental negativo, decidimos criar uma alternativa viável: camisetas de alta qualidade, produzidas eticamente e com estampas que contam histórias.
+                </p>
+                <p class="text-muted" style="line-height: 1.8;">
+                    O que começou em uma pequena garagem como uma produção artesanal para amigos mais próximos, rapidamente se tornou uma marca reconhecida nacionalmente por seu compromisso inabalável com o conforto e o respeito ao meio ambiente. Hoje, vestimos milhares de pessoas que buscam propósito e estilo em uma única peça.
+                </p>
+            </div>
+        </section>
+
+        <!-- Missão, Visão e Valores -->
+        <section>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Missão</h4>
+                            <p class="card-text text-muted">
+                                O nosso objetivo é o de produzir roupas duráveis e confortáveis utilizando matérias-primas sustentáveis, promovendo o bem-estar dos nossos clientes e minimizando o impacto ambiental.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Visão</h4>
+                            <p class="card-text text-muted">
+                                Ser a marca referência de transparência e honestidade com os nossos consumidores. Aqui, não queremos apenas vender nossas camisetas, mas deixar os nossos clientes felizes também.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Valores</h4>
+                            <ul class="text-start text-muted mt-3 mb-0" style="list-style-type: disc;">
+                                <li>Sustentabilidade ecológica</li>
+                                <li>Transparência nos processos</li>
+                                <li>Qualidade superior e durabilidade</li>
+                                <li>Valorização da arte independente</li>
+                                <li>Respeito e empatia com o cliente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Barra Inferior -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0"> &copy; CAPY 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btnTopo" title="Voltar ao topo">↑ Voltar ao Topo</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Pra usar como base de modelos prontos: https://getbootstrap.com/docs/5.0/examples/cheatsheet/ -->
+    <!-- Pra usar como base das notações de espaçamento: https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Para usar fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Para usar fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Para a Montserrat -->
+    <link href="styles.css" rel="stylesheet"> <!-- Pro botão de Voltar ao Topo -->
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4 logo-size" href="home.html"> 
+                    <img src="resources/imgs/logo.png" alt="logo da empresa"> 
+                    <span>CAPY</span> 
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2"> 
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="precos.html">Preços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner / Carrossel -->
+
+    <div id="bannerPrincipal" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="resources/imgs/carrossel-1.jpg" class="d-block w-100" alt="Nova Coleção">
+                <div class="carousel-caption">
+                    <h5 class="display-6 fw-bold">Conjunto Verão 2026</h5>
+                    <p class="lead">Conheça as nossas estampas exclusivas para esta temporada!</p>
+                    <a href="produtos.html" class="btn btn-light btn-md shadow-sm fw-semibold">Ver Produtos</a>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="resources/imgs/carrossel-2.jpg" class="d-block w-100" alt="Frete Grátis">
+                <div class="carousel-caption">
+                    <h5 class="display-6 fw-bold">Novas Estampas</h5>
+                    <p class="lead">Explore as novas adições ao nosso catálogo!</p>
+                    <a href="produtos.html" class="btn btn-dark btn-md shadow-sm fw-semibold">Aproveitar Agora</a>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="resources/imgs/carrossel-3.jpg" class="d-block w-100" alt="Monte sua arte">
+                <div class="carousel-caption">
+                    <h5 class="display-6 fw-bold">Estampas Personalizadas</h5>
+                    <p class="lead">Converse com a gente e transforme as suas ideias em realidade!</p>
+                    <a href="contato.html" class="btn btn-success btn-md shadow-sm fw-semibold">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <main class="container mt-5">
+        <div class="jumbotron text-center bg-light p-5 rounded ">
+            <h1 class="display-4">Nós somos a <b>CAPY</b></h1>
+            <p class="lead">Produzimos camisas relaxadas para pessoas tranquilas</p>
+            <a class="btn btn-success btn-lg" href="sobre.html" role="button">Conheça mais sobre a gente</a>
+        </div>
+
+        <div class="row align-items-center my-5">
+            <h1 class="text-center">Camisetas em destaque</h1>
+        </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">        
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="resources/imgs/camisa-1.png" class="card-img-top" alt="Camiseta Classic Minimalist">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Tamo Junto Sempre!</h5>
+                            <p class="card-text text-muted">Camiseta estampada da coleção CAPYbaras do Brasil, um produto exclusivo CAPY.</p>
+                            <h6 class="text-secondary fw-bold mb-3">A partir de R$ 49,00</h6>
+                            <a class="btn btn-dark w-100" href="produtos.html" role="button">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="resources/imgs/camisa-2.png" class="card-img-top" alt="Camiseta Vintage Nature">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Eu Quero Café</h5>
+                            <p class="card-text text-muted">Camiseta estampada da coleção CAPYbaras do Brasil, um produto exclusivo CAPY.</p>
+                            <h6 class="text-secondary fw-bold mb-3">A partir de R$ 49,00</h6>
+                            <a class="btn btn-dark w-100" href="produtos.html" role="button">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="resources/imgs/camisa-3.png" class="card-img-top" alt="Camiseta Urban Line">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Vai Brasil</h5>
+                            <p class="card-text text-muted">Camiseta estampada da coleção CAPYbaras do Brasil, um produto exclusivo CAPY.</p>
+                            <h6 class="text-secondary fw-bold mb-3">A partir de R$ 49,00</h6>
+                            <a class="btn btn-dark w-100" href="produtos.html" role="button">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0"> &copy; CAPY 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btnTopo" title="Voltar ao topo">↑ Voltar ao Topo</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

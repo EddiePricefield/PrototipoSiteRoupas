@@ -1,0 +1,122 @@
+/* Atributos para a página */
+
+header {
+  min-height: 50px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Montserrat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  min-height: 50px;
+}
+
+/* Fonte Montserrat*/
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Mudar as cores 'default' do bootstrap */
+
+.navbar-dark {
+    background-color: rgb(63, 42, 25) !important;
+    border: none !important;
+    border-width:0!important;
+}
+
+.bg-dark {
+    background-color: rgb(63, 42, 25) !important;
+    border: none !important;
+    border-width:0!important;
+}
+
+.bg-light {
+    background-color: rgba(255, 115, 0, 0.089) !important;
+    border: none !important;
+    border-width:0!important;
+}
+
+.btn-dark {
+    background-color: rgb(43, 28, 16) !important;
+    border: none !important;
+    border-width:0!important;
+}
+
+.table-dark th {
+    background-color: rgb(43, 28, 16) !important;
+    border: none !important;
+    border-width:0!important;
+}
+
+/* Mudar o tamanho da imagem do logo no Menu Superior */
+.logo-size img {
+    height: 40px; 
+    width: auto;
+}
+
+/* Carrossel */
+.carousel-item img {
+    height: 480px; 
+    object-fit: cover; /* Corta a imagem proporcionalmente */
+}
+
+.carousel-caption {
+    bottom: 25%; /* Eleva o bloco de texto para o centro vertical da imagem */
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* Ajuste responsivo: diminui o tamanho do banner em celulares para não quebrar o layout */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 280px; /* Altura menor para telas de smartphones */
+    }
+    .carousel-caption {
+        bottom: 10%;
+        padding: 10px;
+    }
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+    .carousel-caption p {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+    .carousel-caption .btn {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+    
+}
+
+/* Botão Voltar ao Topo */
+#btnTopo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+#btnTopo:hover { background-color: #555; }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preços - CAPY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Pra usar como base de modelos prontos: https://getbootstrap.com/docs/5.0/examples/cheatsheet/ -->
+    <!-- Pra usar como base das notações de espaçamento: https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Para usar fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Para usar fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Para a Montserrat -->
+    <link href="styles.css" rel="stylesheet"> <!-- Pro botão de Voltar ao Topo -->
+</head>
+
+<body>
+
+    <!-- Menu de Navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4 logo-size" href="home.html"> 
+                    <img src="resources/imgs/logo.png" alt="logo da empresa"> 
+                    <span>CAPY</span> 
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2"> 
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="precos.html">Preços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        
+        <!-- Título da Página -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Tabela de Preços</h1>
+            <p class="text-muted text-center">A definição do preço é feita a partir do tipo e do tamanho da peça</p>
+        </div>
+
+        <!-- Tabela -->
+        <section class="card shadow-sm p-4">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col" class="py-3">Modelo</th>
+                            <th scope="col" class="py-3 text-center">Tamanho P</th>
+                            <th scope="col" class="py-3 text-center">Tamanho M</th>
+                            <th scope="col" class="py-3 text-center">Tamanho G</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold text-secondary">Coleção CAPYbaras do Brasil</td>
+                            <td class="text-center text-success fw-bold">R$ 49,00</td>
+                            <td class="text-center text-success fw-bold">R$ 49,00</td>
+                            <td class="text-center text-success fw-bold">R$ 55,00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-secondary">Coleção Lobos do Inverno</td>
+                            <td class="text-center text-success fw-bold">R$ 54,00</td>
+                            <td class="text-center text-success fw-bold">R$ 54,00</td>
+                            <td class="text-center text-success fw-bold">R$ 59,00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-secondary">Coleção Raposas do Outono</td>
+                            <td class="text-center text-success fw-bold">R$ 54,00</td>
+                            <td class="text-center text-success fw-bold">R$ 54,00</td>
+                            <td class="text-center text-success fw-bold">R$ 59,00</td>
+                        </tr>
+                         <tr>
+                            <td class="fw-bold text-secondary">Coleção Animais Solitários</td>
+                            <td class="text-center text-success fw-bold">R$ 59,00</td>
+                            <td class="text-center text-success fw-bold">R$ 59,00</td>
+                            <td class="text-center text-success fw-bold">R$ 65,00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-secondary">Coleção Especial: O Pequeno Príncipe</td>
+                            <td class="text-center text-success fw-bold">R$ 64,00</td>
+                            <td class="text-center text-success fw-bold">R$ 64,00</td>
+                            <td class="text-center text-success fw-bold">R$ 69,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Barra Inferior -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0"> &copy; CAPY 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btnTopo" title="Voltar ao topo">↑ Voltar ao Topo</button>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
